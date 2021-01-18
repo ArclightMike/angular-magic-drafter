@@ -1,6 +1,6 @@
 import { Card } from './card';
 
-export const MYTHICS: Card[] = [
+export const RARES: Card[] = [
     {id:220, name:"Akiri, Fearless Voyager", rarity:"R"},
     {id:4, name:"Archon of Emeria", rarity:"R"},
     {id:5, name:"Archpriest of Iona", rarity:"R"},
