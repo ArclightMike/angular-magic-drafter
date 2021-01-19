@@ -34,9 +34,10 @@ h5 {
   padding: 20px;
   text-align: center;
   color: #eee;
-  max-height: 180px;
-  min-height: 180px;
-  min-width: 120px;
+  max-height: 188px;
+  min-height: 188px;
+  min-width: 163px;
+  max-width: 163px;
   background-color: #996633;
   border-radius: 2px;
 }

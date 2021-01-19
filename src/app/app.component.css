@@ -7,11 +7,13 @@ nav a {
   text-decoration: none;
   margin-top: 10px;
   display: inline-block;
-  background-color: #eee;
+  background-color: #996633;
+  color: white;
   border-radius: 4px;
+  margin-right: .8em;
 }
 nav a:visited, a:link {
-  color: #334953;
+  color: white;
 }
 nav a:hover {
   color: #039be5;
