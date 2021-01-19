@@ -9,7 +9,10 @@ import { CardService } from '../card.service';
 })
 export class SetComponent implements OnInit {
 
-  cards: Card[];
+  commons: Card[];
+  uncommons: Card[];
+  rares: Card[];
+  mythics: Card[];
 
   constructor(private cardService: CardService) { }
 
@@ -21,18 +24,18 @@ export class SetComponent implements OnInit {
   }
 
   getCommons(): void {
-  this.cardService.getCommons().subscribe(cards => this.cards = cards);
+  this.cardService.getCommons().subscribe(cards => this.commons = cards);
   }
 
   getUncommons(): void {
-  this.cardService.getUncommons().subscribe(cards => this.cards = cards);
+  this.cardService.getUncommons().subscribe(cards => this.uncommons = cards);
   }
 
   getRares(): void {
-  this.cardService.getRares().subscribe(cards => this.cards = cards);
+  this.cardService.getRares().subscribe(cards => this.rares = cards);
   }
 
   getMythics(): void {
-  this.cardService.getMythics().subscribe(cards => this.cards = cards);
+  this.cardService.getMythics().subscribe(cards => this.mythics = cards);
   }
 }

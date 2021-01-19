@@ -1,6 +1,15 @@
 <h2>Cards in the Set</h2>
 <ul class="cards">
-	<li *ngFor="let card of cards">
-			<span class="rarity">{{card.rarity}}</span> <span class="badge">{{card.id}}</span> {{card.name}} 
+	<li *ngFor="let mythic of mythics">
+			<span class="rarity">{{mythic.rarity}}</span> <span class="badge">{{mythic.id}}</span> {{mythic.name}} 
+	</li>
+  <li *ngFor="let rare of rares">
+			<span class="rarity">{{rare.rarity}}</span> <span class="badge">{{rare.id}}</span> {{rare.name}} 
+	</li>
+  <li *ngFor="let uncommons of uncommons">
+			<span class="rarity">{{uncommons.rarity}}</span> <span class="badge">{{uncommons.id}}</span> {{uncommons.name}} 
+	</li>
+  <li *ngFor="let common of commons">
+			<span class="rarity">{{common.rarity}}</span> <span class="badge">{{common.id}}</span> {{common.name}} 
 	</li>
 </ul>
