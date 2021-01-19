@@ -8,3 +8,4 @@ Items still under development:
 - Styling is very basic.  
 - Expading the browser window to large or too small makes the cards unreadable, and extension of the sytling issue.
 - Cards appear to be links, but go nowhere.  These need to link out to Scryfall, or display the card image.
+- Everything is mock data direclty in the project right now.  I plan to pull this data from Scryfall's json api.
