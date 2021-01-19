@@ -5,7 +5,7 @@ import { BoosterPackComponent } from './booster-pack/booster-pack.component';
 
 const routes: Routes = [
   {path: 'set', component: SetComponent},
-  {path: 'boosterpack', component: BoosterPackComponent},
+  {path: 'booster-pack', component: BoosterPackComponent},
   {path: '', redirectTo: '/set', pathMatch: 'full'},
 ]
 
