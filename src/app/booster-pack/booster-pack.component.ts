@@ -17,6 +17,7 @@ export class BoosterPackComponent implements OnInit {
   constructor(private cardService: CardService) { }
 
   ngOnInit() {
+    //This is a 50/50 chance, which is not correct.  ToDo: Fix the math.
     var MythicOrRare = Math.round(Math.random());
     if (MythicOrRare === 0){
       this.getMythics();
@@ -29,19 +30,23 @@ export class BoosterPackComponent implements OnInit {
   }
 
   getCommons(): void {
-  this.cardService.getCommons().subscribe(cards => this.commons = cards.sort(() => .5 - Math.random()).slice(0,10));
+    //Get 10 random commons.
+    this.cardService.getCommons().subscribe(cards => this.commons = cards.sort(() => .5 - Math.random()).slice(0,10));
   }
 
   getUncommons(): void {
-  this.cardService.getUncommons().subscribe(cards => this.uncommons = cards.sort(() => .5 - Math.random()).slice(0,3));
+    //Get 3 random uncommons.
+    this.cardService.getUncommons().subscribe(cards => this.uncommons = cards.sort(() => .5 - Math.random()).slice(0,3));
   }
 
   getRares(): void {
-  this.cardService.getRares().subscribe(cards => this.rares = cards.sort(() => .5 - Math.random()).slice(0,1));
+    //Get 1 random rare.
+    this.cardService.getRares().subscribe(cards => this.rares = cards.sort(() => .5 - Math.random()).slice(0,1));
   }
 
   getMythics(): void {
-  this.cardService.getMythics().subscribe(cards => this.mythics = cards.sort(() => .5 - Math.random()).slice(0,1));
+    //Get 1 random mythic.
+    this.cardService.getMythics().subscribe(cards => this.mythics = cards.sort(() => .5 - Math.random()).slice(0,1));
   }
 
 }

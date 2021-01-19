@@ -24,18 +24,22 @@ export class SetComponent implements OnInit {
   }
 
   getCommons(): void {
+    //Get all commons.
   this.cardService.getCommons().subscribe(cards => this.commons = cards);
   }
 
   getUncommons(): void {
+    //Get all uncommons.
   this.cardService.getUncommons().subscribe(cards => this.uncommons = cards);
   }
 
   getRares(): void {
+    //Get all rares.
   this.cardService.getRares().subscribe(cards => this.rares = cards);
   }
 
   getMythics(): void {
+    //Get all mythics.
   this.cardService.getMythics().subscribe(cards => this.mythics = cards);
   }
 }

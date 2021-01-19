@@ -9,11 +9,6 @@ import { Observable, of } from 'rxjs';
 @Injectable()
 export class CardService {
 
-  getSet(): Observable<Card[]> {
-    //There is probably a way to combine these into a set.
-  return of(COMMONS);
-}
-
   getCommons(): Observable<Card[]> {
     //
   return of(COMMONS);

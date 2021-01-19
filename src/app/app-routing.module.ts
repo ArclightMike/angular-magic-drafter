@@ -6,7 +6,7 @@ import { BoosterPackComponent } from './booster-pack/booster-pack.component';
 const routes: Routes = [
   {path: 'set', component: SetComponent},
   {path: 'booster-pack', component: BoosterPackComponent},
-  {path: '', redirectTo: '/set', pathMatch: 'full'},
+  {path: '', redirectTo: '/set', pathMatch: 'full'}, //Default is the set view.
 ]
 
 @NgModule({
