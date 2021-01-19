@@ -7,4 +7,5 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Magic: The Gathering Booster Drafter';
+  note = "*Only for Zendikar Rising set.  More sets coming soon!"
 }
