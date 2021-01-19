@@ -3,6 +3,25 @@
   <a *ngFor="let common of commons" class="col-1-4">
     <div class="module card">
       <h4>{{common.name}}</h4>
+      <h5>{{common.rarity}}</h5>
+    </div>
+  </a>
+  <a *ngFor="let uncommon of uncommons" class="col-1-4">
+    <div class="module card">
+      <h4>{{uncommon.name}}</h4>
+      <h5>{{uncommon.rarity}}</h5>
+    </div>
+  </a>
+  <a *ngFor="let rare of rares" class="col-1-4">
+    <div class="module card">
+      <h4>{{rare.name}}</h4>
+      <h5>{{rare.rarity}}</h5>
+    </div>
+  </a>
+  <a *ngFor="let mythic of mythics" class="col-1-4">
+    <div class="module card">
+      <h4>{{mythic.name}}</h4>
+      <h5>{{mythic.rarity}}</h5>
     </div>
   </a>
 </div>

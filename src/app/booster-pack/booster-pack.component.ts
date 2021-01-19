@@ -17,26 +17,31 @@ export class BoosterPackComponent implements OnInit {
   constructor(private cardService: CardService) { }
 
   ngOnInit() {
-    this.getMythics();
-    this.getRares();
+    var MythicOrRare = Math.round(Math.random());
+    if (MythicOrRare === 0){
+      this.getMythics();
+    }
+    else{
+      this.getRares();
+    }
     this.getUncommons();
     this.getCommons();
   }
 
   getCommons(): void {
-  this.cardService.getCommons().subscribe(cards => this.commons = cards);
+  this.cardService.getCommons().subscribe(cards => this.commons = cards.sort(() => .5 - Math.random()).slice(0,10));
   }
 
   getUncommons(): void {
-  this.cardService.getUncommons().subscribe(cards => this.uncommons = cards);
+  this.cardService.getUncommons().subscribe(cards => this.uncommons = cards.sort(() => .5 - Math.random()).slice(0,3));
   }
 
   getRares(): void {
-  this.cardService.getRares().subscribe(cards => this.rares = cards);
+  this.cardService.getRares().subscribe(cards => this.rares = cards.sort(() => .5 - Math.random()).slice(0,1));
   }
 
   getMythics(): void {
-  this.cardService.getMythics().subscribe(cards => this.mythics = cards);
+  this.cardService.getMythics().subscribe(cards => this.mythics = cards.sort(() => .5 - Math.random()).slice(0,1));
   }
 
 }

@@ -6,5 +6,5 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Magic: The Gathering Drafter';
+  name = 'Magic: The Gathering Booster Drafter';
 }
