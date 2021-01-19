@@ -7,10 +7,11 @@ import { HelloComponent } from './hello.component';
 import { SetComponent } from './set/set.component';
 import { CardService } from './card.service';
 import { AppRoutingModule } from './app-routing.module';
+import { BoosterPackComponent } from './booster-pack/booster-pack.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule ],
-  declarations: [ AppComponent, HelloComponent, SetComponent ],
+  declarations: [ AppComponent, HelloComponent, SetComponent, BoosterPackComponent ],
   bootstrap:    [ AppComponent ],
   providers: [CardService]
 })
